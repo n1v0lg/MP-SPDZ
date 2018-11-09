@@ -143,12 +143,15 @@ void Buffer<T,U>::input(U& a)
     next++;
 }
 
+template class Buffer< Share<Z2<64>>, Share<Z2<64>> >;
 template class Buffer< Share<gfp>, Share<gfp> >;
 template class Buffer< Share<gf2n>, Share<gf2n> >;
 template class Buffer< Rep3Share, Rep3Share>;
+template class Buffer< InputTuple<Z2<64>>, RefInputTuple<Z2<64>> >;
 template class Buffer< InputTuple<sgfp>, RefInputTuple<sgfp> >;
 template class Buffer< InputTuple<sgf2n>, RefInputTuple<sgf2n> >;
 template class Buffer< InputTuple<Rep3Share>, RefInputTuple<Rep3Share> >;
+template class Buffer< Z2<64>, Z2<64> >;
 template class Buffer< gfp, gfp >;
 template class Buffer< gf2n, gf2n >;
 template class Buffer< FixedVec<Integer, 2>, FixedVec<Integer, 2> >;
