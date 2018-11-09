@@ -144,15 +144,18 @@ void Memory<T>::Load_Memory(ifstream& inpf)
 
 template class Memory<sgfp>;
 template class Memory<sgf2n>;
+template class Memory<sz2k>;
 template class Memory<Integer>;
 template class Memory<Rep3Share>;
 
 template istream& operator>>(istream& s,Memory<sgfp>& M);
 template istream& operator>>(istream& s,Memory<sgf2n>& M);
+template istream& operator>>(istream& s,Memory<sz2k>& M);
 template istream& operator>>(istream& s,Memory<Integer>& M);
 template istream& operator>>(istream& s,Memory<Rep3Share>& M);
 
 template ostream& operator<<(ostream& s,const Memory<sgfp>& M);
 template ostream& operator<<(ostream& s,const Memory<sgf2n>& M);
+template ostream& operator<<(ostream& s,const Memory<sz2k>& M);
 template ostream& operator<<(ostream& s,const Memory<Integer>& M);
 template ostream& operator<<(ostream& s,const Memory<Rep3Share>& M);

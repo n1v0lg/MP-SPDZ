@@ -238,6 +238,13 @@ inline void Sub_Data_Files<T>::get(Dtype dtype, T* a)
 
 template<>
 template<>
+inline Sub_Data_Files<sz2k>& Data_Files<sz2k>::get_sub<sz2k>()
+{
+  return DataFp;
+}
+
+template<>
+template<>
 inline Sub_Data_Files<sgfp>& Data_Files<sgfp>::get_sub<sgfp>()
 {
   return DataFp;

@@ -102,3 +102,4 @@ void Input<T>::stop(int player, vector<int> targets)
 template class InputBase<Integer>;
 template class Input<gf2n>;
 template class Input<gfp>;
+template class Input<Z2<64>>;

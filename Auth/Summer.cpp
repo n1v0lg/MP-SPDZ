@@ -86,6 +86,7 @@ void Summer<T>::run()
 
 template class Summer<gfp>;
 template class Summer<gf2n>;
+template class Summer<Z2<64>>;
 
 #ifdef USE_GF2N_LONG
 template class Summer<gf2n_short>;

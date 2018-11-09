@@ -523,7 +523,9 @@ void Processor<sint>::maybe_encrypt_sequence(int client_id)
 
 template class SubProcessor<sgf2n>;
 template class SubProcessor<sgfp>;
+template class SubProcessor<sz2k>;
 template class SubProcessor<Rep3Share>;
 
 template class Processor<sgfp>;
+template class Processor<sz2k>;
 template class Processor<Rep3Share>;

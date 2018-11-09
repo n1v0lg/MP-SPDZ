@@ -10,6 +10,7 @@
 #include "Networking/Player.h"
 #include "Math/gf2n.h"
 #include "Math/gfp.h"
+#include "Math/Z2k.h"
 #include "Tools/Commit.h"
 
 /* Run just the Open Protocol for data[i][j] of type octetStream

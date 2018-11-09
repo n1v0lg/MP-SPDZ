@@ -9,6 +9,7 @@
 #include "Math/Share.h"
 #include "Math/gf2n.h"
 #include "Math/gfp.h"
+#include "Math/Z2k.h"
 #include "Math/Integer.h"
 #include "Exceptions/Exceptions.h"
 #include "Networking/Player.h"
@@ -24,6 +25,7 @@
 #include "Binary_File_IO.h"
 #include "Instruction.h"
 #include "SPDZ.h"
+#include "SPDZ2k.h"
 #include "Replicated.h"
 
 #include <stack>
@@ -67,6 +69,7 @@ class SubProcessor
 
   template<class sint> friend class Processor;
   template<class U> friend class SPDZ;
+  template<class U> friend class SPDZ2k;
   template<class U> friend class Replicated;
 
 public:
@@ -315,6 +318,7 @@ class Processor : public ArithmeticProcessor
     void maybe_encrypt_sequence(int client_id);
 
   template<class T> friend class SPDZ;
+  template<class T> friend class SPDZ2k;
   template<class T> friend class SubProcessor;
 };
 

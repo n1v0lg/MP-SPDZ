@@ -242,3 +242,6 @@ template void Create_Random(gf2n_short& ans,const Player& P);
 
 template void Commit_And_Open(vector<gfp>& data,const Player& P);
 template void Create_Random(gfp& ans,const Player& P);
+
+template void Commit_And_Open(vector<Z2<64>>& data,const Player& P);
+template void Create_Random(Z2<64>& ans,const Player& P);

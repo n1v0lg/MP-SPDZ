@@ -264,7 +264,9 @@ void Sub_Data_Files<T>::get(SubProcessor<T>& proc, DataTag tag, const vector<int
 
 template class Sub_Data_Files<sgf2n>;
 template class Sub_Data_Files<sgfp>;
+template class Sub_Data_Files<sz2k>;
 template class Sub_Data_Files<Rep3Share>;
 
 template class Data_Files<sgfp>;
+template class Data_Files<sz2k>;
 template class Data_Files<Rep3Share>;

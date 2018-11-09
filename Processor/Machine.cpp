@@ -418,4 +418,5 @@ void Machine<sint>::reqbl(int n)
 }
 
 template class Machine<sgfp>;
+template class Machine<sz2k>;
 template class Machine<Rep3Share>;

@@ -39,7 +39,7 @@ OBJS = $(BMR) $(FHEOFFLINE) $(TINYOTOFFLINE) $(YAO) $(COMPLETE)
 DEPS := $(OBJS:.o=.d)
 
 
-all: gen_input online offline externalIO yao replicated-bin-party.x replicated-ring-party.x
+all: gen_input online offline externalIO yao replicated-bin-party.x replicated-ring-party.x z2k-party.x
 
 ifeq ($(USE_GF2N_LONG),1)
 all: bmr
@@ -150,6 +150,9 @@ yao-clean:
 
 galois-degree.x: $(COMMON) galois-degree.cpp
 	$(CXX) $(CFLAGS) -o $@ $^ $(LDLIBS)
+
+z2k-party.x: z2k-party.cpp $(COMMON) $(PROCESSOR)
+	$(CXX) $(CFLAGS) z2k-party.cpp -o z2k-party.x $(COMMON) $(PROCESSOR) $(LDLIBS)
 
 replicated-bin-party.x: $(COMMON) $(GC) replicated-bin-party.cpp
 	$(CXX) $(CFLAGS) -o $@ $^ $(LDLIBS) $(BOOST)

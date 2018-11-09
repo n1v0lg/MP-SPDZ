@@ -8,11 +8,14 @@
 #include <iostream>
 using namespace std;
 
+#include "Z2k.h"
 #include "Math/gfp.h"
 #include "Math/gf2n.h"
+
 #include "Math/Integer.h"
 #include "Math/FixedVec.h"
 #include "Processor/SPDZ.h"
+#include "Processor/SPDZ2k.h"
 #include "Processor/Replicated.h"
 
 // Forward declaration as apparently this is needed for friends in templates

@@ -1,4 +1,5 @@
 
+#include <Math/Z2k.h>
 #include "Share.h"
 //#include "Tools/random.h"
 #include "Math/gfp.h"
@@ -69,10 +70,13 @@ bool check_macs(const vector< Share<T> >& S,const T& key)
 
 template class Share<gf2n>;
 template class Share<gfp>;
+template class Share<Z2<64>>;
 template gf2n combine(const vector< Share<gf2n> >& S);
 template gfp combine(const vector< Share<gfp> >& S);
+template Z2<64> combine(const vector< Share<Z2<64>> >& S);
 template bool check_macs(const vector< Share<gf2n> >& S,const gf2n& key);
 template bool check_macs(const vector< Share<gfp> >& S,const gfp& key);
+template bool check_macs(const vector< Share<Z2<64>> >& S,const Z2<64>& key);
 
 #ifdef USE_GF2N_LONG
 template class Share<gf2n_short>;

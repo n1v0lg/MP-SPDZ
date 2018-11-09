@@ -31,3 +31,4 @@ void PrivateOutput<T>::stop(int player, int source)
 
 template class PrivateOutput<gf2n>;
 template class PrivateOutput<gfp>;
+template class PrivateOutput<Z2<64>>;

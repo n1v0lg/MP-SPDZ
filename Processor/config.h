@@ -15,5 +15,6 @@
 
 typedef Share<gf2n> sgf2n;
 typedef Share<gfp> sgfp;
+typedef Share<Z2<64>> sz2k;
 
 #endif /* PROCESSOR_CONFIG_H_ */

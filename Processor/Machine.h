@@ -12,11 +12,12 @@
 #include "Processor/Online-Thread.h"
 #include "Processor/Data_Files.h"
 #include "Math/gfp.h"
-
+#include "Math/Z2k.h"
 #include "Tools/time-func.h"
 
 #include <vector>
 #include <map>
+
 using namespace std;
 
 class BaseMachine
