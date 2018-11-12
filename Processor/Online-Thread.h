@@ -21,7 +21,9 @@ class thread_info
   int covert;
   Names*  Nms;
   gf2n *alpha2i;
-  gfp  *alphapi;
+//  gfp  *alphapi;
+//  sint;
+  typename sint::value_type *alphapi;
   int prognum;
   bool finished;
   bool ready;

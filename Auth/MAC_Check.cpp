@@ -431,10 +431,10 @@ void Passing_MAC_Check<T>::POpen_End(vector<T>& values,const vector<Share<T> >& 
 }
 
 
-template class MAC_Check<Z2<64>>;
+//template class MAC_Check<Z2<64>>;
 //template class Direct_MAC_Check<Z2<64>>;
-template class Parallel_MAC_Check<Z2<64>>;
-template class Passing_MAC_Check<Z2<64>>;
+//template class Parallel_MAC_Check<Z2<64>>;
+//template class Passing_MAC_Check<Z2<64>>;
 
 template class MAC_Check<gfp>;
 template class Direct_MAC_Check<gfp>;

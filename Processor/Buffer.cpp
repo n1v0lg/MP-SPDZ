@@ -147,7 +147,7 @@ template class Buffer< Share<Z2<64>>, Share<Z2<64>> >;
 template class Buffer< Share<gfp>, Share<gfp> >;
 template class Buffer< Share<gf2n>, Share<gf2n> >;
 template class Buffer< Rep3Share, Rep3Share>;
-template class Buffer< InputTuple<Z2<64>>, RefInputTuple<Z2<64>> >;
+template class Buffer< InputTuple<sz2k>, RefInputTuple<sz2k> >;
 template class Buffer< InputTuple<sgfp>, RefInputTuple<sgfp> >;
 template class Buffer< InputTuple<sgf2n>, RefInputTuple<sgf2n> >;
 template class Buffer< InputTuple<Rep3Share>, RefInputTuple<Rep3Share> >;

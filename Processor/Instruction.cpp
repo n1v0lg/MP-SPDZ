@@ -37,6 +37,14 @@ void to_signed_bigint(bigint& bi, const gfp& x, int len)
     bi = -bi;
 }
 
+// TODO remove this
+void to_signed_bigint(bigint& bi, const Z2<64>& x, int len)
+{
+	(void) bi;
+	(void) x;
+	(void) len;
+}
+
 
 void Instruction::parse(istream& s)
 {
@@ -1718,4 +1726,5 @@ void Program::execute(Processor<sint>& Proc) const
 }
 
 template void Program::execute(Processor<sgfp>& Proc) const;
+template void Program::execute(Processor<sz2k>& Proc) const;
 template void Program::execute(Processor<Rep3Share>& Proc) const;

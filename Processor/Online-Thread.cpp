@@ -217,4 +217,5 @@ void thread_info<sint>::purge_preprocessing(Names& N, string prep_dir)
 
 
 template class thread_info<sgfp>;
+template class thread_info<sz2k>;
 template class thread_info<Rep3Share>;
