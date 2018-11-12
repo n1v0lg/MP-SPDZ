@@ -18,6 +18,7 @@ using namespace std;
 #include "bigint.h"
 #include "field_types.h"
 #include "mpn_fixed.h"
+//#include "Auth/MACCheckZ2k.h"
 
 template<class T> class Input;
 template<class T> class SPDZ2k;
@@ -39,7 +40,7 @@ public:
 
 	typedef Z2<K> value_type;
 	typedef Z2<K> clear;
-	typedef MAC_Check<Z2<64>> MC;
+	typedef MAC_Check<Z2<K>> MC;
 	typedef Input<Z2<64>> Inp;
 	typedef PrivateOutput<Z2<64>> PO;
 	typedef SPDZ2k<Z2<64>> Protocol;

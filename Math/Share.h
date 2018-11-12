@@ -8,7 +8,7 @@
 #include <iostream>
 using namespace std;
 
-#include "Z2k.h"
+#include "Math/Z2k.h"
 #include "Math/gfp.h"
 #include "Math/gf2n.h"
 

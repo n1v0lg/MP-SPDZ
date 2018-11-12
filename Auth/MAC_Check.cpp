@@ -1,5 +1,4 @@
 
-#include <Math/Z2k.h>
 #include "Auth/MAC_Check.h"
 #include "Auth/Subroutines.h"
 #include "Exceptions/Exceptions.h"
@@ -8,6 +7,7 @@
 #include "Tools/time-func.h"
 #include "Tools/int.h"
 
+#include <Math/Z2k.h>
 #include "Math/gfp.h"
 #include "Math/gf2n.h"
 #include "Math/BitVec.h"
@@ -431,7 +431,7 @@ void Passing_MAC_Check<T>::POpen_End(vector<T>& values,const vector<Share<T> >& 
 }
 
 
-//template class MAC_Check<Z2<64>>;
+template class MAC_Check<Z2<64>>;
 //template class Direct_MAC_Check<Z2<64>>;
 //template class Parallel_MAC_Check<Z2<64>>;
 //template class Passing_MAC_Check<Z2<64>>;

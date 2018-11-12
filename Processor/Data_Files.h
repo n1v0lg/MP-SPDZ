@@ -266,6 +266,13 @@ inline Sub_Data_Files<Rep3Share>& Data_Files<Rep3Share>::get_sub<Rep3Share>()
 
 template<>
 template<>
+inline Sub_Data_Files<sgf2n>& Data_Files<sz2k>::get_sub<sgf2n>()
+{
+  return DataF2;
+}
+
+template<>
+template<>
 inline Sub_Data_Files<sgf2n>& Data_Files<Rep3Share>::get_sub<sgf2n>()
 {
   return DataF2;

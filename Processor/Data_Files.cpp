@@ -21,6 +21,11 @@ const bool Sub_Data_Files<Rep3Share>::implemented[N_DTYPE] =
     { false, false, true, false, false, false }
 ;
 
+template<>
+const bool Sub_Data_Files<sz2k>::implemented[N_DTYPE] =
+    { false, false, true, false, false, false }
+;
+
 const int DataPositions::tuple_size[N_DTYPE] = { 3, 2, 1, 2, 3, 3 };
 
 template<class T>

@@ -3,9 +3,9 @@
 
 /* Class for storing MAC Check data and doing the Check */
 
+using namespace std;
 #include <vector>
 #include <deque>
-using namespace std;
 
 #include "Math/Share.h"
 #include "Networking/Player.h"

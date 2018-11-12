@@ -54,7 +54,8 @@ void* Sub_Main_Func(void* ptr)
     {
       cerr << "Using direct communication. If computation stalls, use -m when compiling." << endl;
       MC2 = new Direct_MAC_Check<gf2n>(*(tinfo->alpha2i),*(tinfo->Nms), num);
-      MCp = new typename sint::Direct_MC(*(tinfo->alphapi),*(tinfo->Nms), num);
+//      MCp = new typename sint::Direct_MC(*(tinfo->alphapi),*(tinfo->Nms), num);
+      MCp = new typename sint::MAC_Check(*(tinfo->alphapi),machine.opening_sum, machine.max_broadcast);
     }
   else if (machine.parallel)
     {
@@ -67,7 +68,8 @@ void* Sub_Main_Func(void* ptr)
     {
       cerr << "Using indirect communication." << endl;
       MC2 = new MAC_Check<gf2n>(*(tinfo->alpha2i), machine.opening_sum, machine.max_broadcast);
-      MCp = new typename sint::MAC_Check(*(tinfo->alphapi), machine.opening_sum, machine.max_broadcast);
+//      MCp = new typename sint::MAC_Check(*(tinfo->alphapi), machine.opening_sum, machine.max_broadcast);
+      throw not_implemented();
     }
 
   // Allocate memory for first program before starting the clock
